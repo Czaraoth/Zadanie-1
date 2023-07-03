@@ -1,18 +1,27 @@
-.map-container {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  margin: 30px;
+#map {
+  height: 900px;
   width: 80%;
 }
-
-.map-frame {
-  border: 2px solid black;
-  height: 100%;
+#container{
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
 }
-
-#map {
-  height: 100%;
+#informations{
+  display: inline-flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  border: 2px solid black;
+  border-radius: 10%;
+  margin-left: 2.5%;
+  input{
+    margin-top: 5px;
+  }
+  padding: 10px;
 }

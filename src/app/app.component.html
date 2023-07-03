@@ -1,5 +1,11 @@
-<div class="map-container">
-  <div class="map-frame">
-    <div id="map"></div>
+<div id="container" class="container-fluid py-3">
+  <div id="map"></div>
+  <div id="informations">
+    <label for="cords_x">Koordynaty</label><br>
+    <input type="text" id="cords_x" disabled value="{{x}}"/>
+    <input type="text" id="cords_y" disabled value="{{y}}"/>
+    <input type="text" id="name" placeholder="Nazwa" value="{{name}}" (keyup)="onName($event)"/>
+    <input type="text" id="desc" placeholder="Opis" value="{{desc}}" (keyup)="onDesc($event)"/>
+    <button (click)="changeData()">Zmień dane</button>
   </div>
 </div>
